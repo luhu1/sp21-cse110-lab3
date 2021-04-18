@@ -3,6 +3,74 @@ body {
   }
   
   h1 {
-    color: rgb(0,0,128);
-    margin-left: 20px;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(248, 248, 248);
+    margin: 1em 1em 1em 1em;
+    text-align: center;
+    text-decoration: underline;
+    display: block;
+  }
+  h2 {
+      font-family:'Courier New', Courier, monospace;
+      color: #663399;
+  }
+  p {
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+
+ul, p {
+  width: 12in;
+  height: auto;
+  border-width: 3px;
+  border-style: solid;
+  border-color: whitesmoke;
+  padding-left: 2ex;
+  padding-right: 2ex;
+  padding-top: 4ex;
+  padding-bottom: 4ex;
+}
+
+img {
+    border: 2pc solid hsl(30, 93%, 73%);
+    padding: 1 rem;
+    margin-top: 2pc;
+    margin-bottom:5pt;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    position: sticky;
+}
+
+video {
+    width: 6in;
+    height: 4 in;
+    margin: auto;
+    padding: 25px 25px 25px 25px;
+    border: 5px solid black;
+    position:static;
+}
+.box {
+border-radius: 2rem;
+display: inline-block;
+}
+.one {
+    background-color: #FFB1B8;
+}
+.two {
+    background-color:hsl(30, 93%, 73%);
+}
+.three {
+    background-color: rgb(184, 240, 167);
+}
+
+button:hover {
+    color: red;
+}
+link:active{
+    color: red;
+}
+@media screen and (min-width: 900px) {
+    article {
+      padding: 1rem 3rem;
+    }
   }
