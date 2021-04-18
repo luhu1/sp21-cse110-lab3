@@ -6,3 +6,9 @@ body {
     color: rgb(0,0,128);
     margin-left: 20px;
   }
+ h2 {
+      color: #663399;
+  }
+  p{
+    font-family: 'Shadows Into Light', cursive;
+  }
