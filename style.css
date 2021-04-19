@@ -1,9 +1,19 @@
+@media screen and (min-width: 900px) {
+    div {
+      padding: 1rem 3rem;
+    }
+  }
+
+@media (max-width: 35rem) {
+    div {
+      margin:auto;
+    }
+  }
 body {
     background-color: lightblue;
   }
   
   h1 {
-
     font-family:'Courier New', Courier, monospace;
     color: rgb(248, 248, 248);
     margin: 1em 1em 1em 1em;
@@ -14,11 +24,31 @@ body {
   h2 {
       font-family:'Courier New', Courier, monospace;
       color: #663399;
+      
+  }
+
+  .flex-container{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+  }
+
+  .second{
+      flex-shrink: 1;
+      align-self: flex-end;
   }
   p {
     font-family: 'Shadows Into Light', cursive;
   }
 
+  p ~ video {
+    width: 6in;
+    height: 4 in;
+    margin: auto;
+    padding: 25px 25px 25px 25px;
+    border: 5px solid black;
+    position:static;
+  }
 
 ul, p {
   width: 12in;
@@ -32,6 +62,33 @@ ul, p {
   padding-bottom: 4ex;
 }
 
+.entry{
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr 1fr;
+    justify-content: center;
+}
+.label{
+    justify-self: start;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+ol > li {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li:first-of-type + li {
+    color: navy;
+  }
+
+
+ul.lowlight{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 img {
     border: 2pc solid hsl(30, 93%, 73%);
     padding: 1 rem;
@@ -42,14 +99,6 @@ img {
     position: sticky;
 }
 
-video {
-    width: 6in;
-    height: 4 in;
-    margin: auto;
-    padding: 25px 25px 25px 25px;
-    border: 5px solid black;
-    position:static;
-}
 .box {
 border-radius: 2rem;
 display: inline-block;
@@ -60,9 +109,17 @@ display: inline-block;
 .two {
     background-color:hsl(30, 93%, 73%);
 }
-.three {
+#three {
     background-color: rgb(184, 240, 167);
 }
+*.classes {
+    color: red;
+
+}
+
+a[href^="#"] {
+    font-family:'Courier New', Courier, monospace;
+  }
 
 button:hover {
     color: red;
@@ -70,19 +127,3 @@ button:hover {
 link:active{
     color: red;
 }
-@media screen and (min-width: 900px) {
-    article {
-      padding: 1rem 3rem;
-    }
-  }
-
-    color: rgb(0,0,128);
-    margin-left: 20px;
-  }
- h2 {
-      color: #663399;
-  }
-  p{
-    font-family: 'Shadows Into Light', cursive;
-  }
-
